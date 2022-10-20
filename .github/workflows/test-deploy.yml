@@ -12,7 +12,7 @@ name: Other branch test
 on:
   push:
     branches:
-      - '**'
+      - 'test**'
 
 
 jobs:
