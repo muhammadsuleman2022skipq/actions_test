@@ -1,0 +1,17 @@
+name: Other branch test
+
+on:
+  push:
+    branches:
+      - 'test**'
+
+
+jobs:
+  deploy:
+    name: Other Branch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        run: |
+          echo "This is from other branch"
